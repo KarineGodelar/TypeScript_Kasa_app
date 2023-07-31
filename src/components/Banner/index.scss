@@ -1,0 +1,46 @@
+@import '../../assets/style/variables';
+
+.banner {
+  display: flex;
+  border-radius: 25px;
+  background-color: black;
+  background-position: center;
+  background-size: cover;
+  margin: 50px 100px 38px 100px;
+
+  @media (max-width: 768px) {
+    margin: 20px;
+    border-radius: 10px;
+  }
+}
+
+.banner__home {
+  height: 223px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)),
+    url('../../assets/images/image_source_1.png');
+  @media (max-width: 768px) {
+    height: 111px;
+  }
+  &--text {
+    color: white;
+    @include kasa-font-family;
+    font-size: 48px;
+    font-weight: 500;
+    width: 100%;
+    text-align: center;
+    margin-top: 80px;
+    @media (max-width: 768px) {
+      font-size: 24px;
+      margin-top: 40px;
+    }
+  }
+}
+
+.banner__apropos {
+  height: 223px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)),
+    url('../../assets/images/image_source_2.png');
+  &--text {
+    display: none;
+  }
+}

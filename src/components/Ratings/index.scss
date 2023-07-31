@@ -1,0 +1,10 @@
+.ratings {
+  display: flex;
+
+  &__star {
+    height: 36px;
+    @media (max-width: 768px) {
+      height: 18px;
+    }
+  }
+}

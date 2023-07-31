@@ -1,0 +1,47 @@
+@import '../../assets/style/variables';
+
+.erreur {
+  @include kasa-font-family;
+  color: $red-kasa;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 850px;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  @media (max-width: 768px) {
+    height: 580px;
+  }
+
+  &__title {
+    font-size: 288px;
+    font-weight: 700;
+    margin: 0px;
+    @media (max-width: 768px) {
+      font-size: 96px;
+    }
+  }
+
+  &__subtitle {
+    font-size: 36px;
+    font-weight: 500;
+    margin: 0px 90px;
+    padding-bottom: 50px;
+    @media (max-width: 768px) {
+      font-size: 18px;
+    }
+  }
+
+  &__linkhome {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0px;
+    padding-bottom: 90px;
+    color: $red-kasa;
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
+  }
+}

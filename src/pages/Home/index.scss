@@ -1,0 +1,29 @@
+@import '../../assets/style/variables';
+
+.cards-container {
+  background-color: $grey-kasa;
+  border-radius: 25px;
+  // margin: 50px;
+  margin: 42px 100px 50px 100px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5%;
+  padding: 55px;
+
+  @media (max-width: 768px) {
+    background-color: white;
+    margin: 20px;
+    padding: 0px;
+    gap: 20px;
+  }
+  &-big-screen {
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+}

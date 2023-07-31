@@ -1,0 +1,95 @@
+@import '../../assets/style/variables';
+
+.collapse {
+  margin: 0px;
+  min-width: 48%;
+  box-sizing: border-box;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    margin: 0px;
+  }
+
+  &__dropdown {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 17px;
+    height: 52px;
+    border-radius: 10px;
+    background-color: $red-kasa;
+    @include kasa-font-family;
+    font-weight: 500;
+    color: white;
+
+    font-size: 18px;
+
+    @media (max-width: 768px) {
+      border-radius: 5px;
+      height: 30px;
+      font-size: 13px;
+    }
+
+    &--apropos {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0px 17px;
+      height: 52px;
+      border-radius: 10px;
+      background-color: $red-kasa;
+      @include kasa-font-family;
+      font-weight: 500;
+      color: white;
+      font-size: 24px;
+
+      @media (max-width: 768px) {
+        border-radius: 5px;
+        height: 30px;
+        font-size: 13px;
+      }
+    }
+
+    &--arrow {
+      height: 15px;
+
+      &-normal {
+        transition: transform 500ms;
+        transform: rotate(180deg);
+
+        @media (max-width: 768px) {
+          height: 10px;
+        }
+      }
+      &-reverse {
+        height: 15px;
+        transition: transform 500ms;
+        transform: rotate(0deg);
+
+        @media (max-width: 768px) {
+          height: 10px;
+        }
+      }
+    }
+  }
+
+  &__text {
+    &--open {
+      background-color: $grey-kasa;
+      @include kasa-font-family;
+      font-size: 18px;
+      font-weight: 400;
+      color: $red-kasa;
+      padding: 17px;
+      border-radius: 0px 0px 10px 10px;
+      list-style-type: none;
+      @media (max-width: 768px) {
+        border-radius: 5px;
+        font-size: 13px;
+      }
+    }
+    &--closed {
+      display: none;
+    }
+  }
+}
